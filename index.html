@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Web Shop</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+
+
+    <div class="my-navbar">
+      <img src="images/PokeBuyLogo.png" />
+      <img src="images/title.png" id="titleImg"/>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <div class="main-container">
+      <div class="cart-container">
+        <button class="cart-button blue-hover-btn">Cart <span class="cart-badge">0</span></button>
+      </div>
+
+      <div class="page-buttons-container">
+        <gr>
+          <button class="prev-button blue-hover-btn disable-button">Prev</button>
+          <span class="page-badge">1</span>
+          <button class="next-button blue-hover-btn">Next</button>
+
+          <g>
+            <span>Per Page:</span>
+            <select class="form-select " id="pppDropdown">
+              <option >20</option>
+              <option >40</option>
+              <option >60</option>
+              <option >80</option>
+              <option >100</option>
+              <option >200</option>
+              <option >500</option>
+            </select>
+          </g>
+
+        </gr>
+        
+
+        
+        
+
+        <g class = "dropdown">
+          <span>Sort By:</span>
+          <select class="form-select " id="sbDropdown">
+            <option value="id">ID</option>
+            <option value="name">Name</option>
+            <option value="value">Price</option>
+            <option value="formCount">Form</option>
+        </select>
+        </g>
+        
+
+
+      </div>
+
+      <div class="items-grid">
+        <img class="loading-image" src="images/pokeballLoading.gif">
+      </div>
+
+      <div class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Cart</h2>
+          <ul class="cart-items"></ul>
+          <p>Total: <span class="cart-total">$0.00</span></p>
+          <button class="buy-btn blue-hover-btn">Buy</button>
+        </div>
+      </div>
+
+
+    </div>
+    
+    
+    <script src="script.js"></script>
+  </body>
+</html>
