@@ -307,7 +307,7 @@ g span{
   
 
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 768px) {
     .page-buttons-container{
         flex-direction: column;
     }
